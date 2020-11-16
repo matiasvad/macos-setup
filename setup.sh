@@ -78,41 +78,19 @@ homebrew_cask_packages=(
 )
 
 # extra apps to install
-# uad for apollo twin x
-# razer synapse
 # logi options
-# elgato control center
-# elgato stream deck
-# https://1.1.1.1/beta/
 
 # apps in mac store
 # amphetamine
-# easyres
-# magnet
 # todoist
-
-# apps in setapp (check your setapps favorites list)
-# bartender
-# sip (color picker)
-# instacal
-# paste
-# mission control plus
-# yoink
-# slidepad
-# cleanshot
-# focus
-# meeter
-
-# install n (https://github.com/tj/n)
-# make sure you follow steps here to take control of /usr folders
 
 for homebrew_cask_package in "${homebrew_cask_packages[@]}"; do
   brew cask install "$homebrew_cask_package"
 done
 
 # configure git
-git config --global user.name "Chris on Code"
-git config --global user.email "hey@chrisoncode.io"
+git config --global user.name "Matias Vad"
+git config --global user.email "matias@hey.com"
 gh config set git_protocol "ssh"
 
 # Install Composer
