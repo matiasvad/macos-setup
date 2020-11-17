@@ -71,7 +71,6 @@ homebrew_cask_packages=(
   "toggl-track"
   "tower"
   "transmit"
-  "tweetbot"
   "vanilla"
   "visual-studio-code"
   "vlc"
@@ -84,6 +83,7 @@ homebrew_cask_packages=(
 # spark
 # amphetamine
 # todoist
+# tweetbot
 
 for homebrew_cask_package in "${homebrew_cask_packages[@]}"; do
   brew cask install "$homebrew_cask_package"
