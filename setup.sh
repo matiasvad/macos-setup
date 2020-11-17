@@ -66,7 +66,6 @@ homebrew_cask_packages=(
   "rectangle"
   "rocket"
   "slack"
-  "spark"
   "tableplus"
   "the-unarchiver"
   "toggl-track"
@@ -82,6 +81,7 @@ homebrew_cask_packages=(
 # logi options
 
 # apps in mac store
+# spark
 # amphetamine
 # todoist
 
