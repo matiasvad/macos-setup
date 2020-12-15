@@ -16,7 +16,7 @@ sudo -v
 echo "Installing Homebrew"
 
 if test ! $(which brew); then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # Install Homebrew Packages
@@ -46,14 +46,9 @@ echo "Installing Homebrew cask packages"
 
 homebrew_cask_packages=(
   "1password"
-  "adobe-creative-cloud"
   "cleanshot"
   "discord"
-  "dropbox"
-  "fantastical"
   "figma"
-  "firefox"
-  "google-chrome"
   "hey"
   "hyper"
   "imageoptim"
@@ -65,7 +60,6 @@ homebrew_cask_packages=(
   "postman"
   "rectangle"
   "rocket"
-  "slack"
   "tableplus"
   "the-unarchiver"
   "toggl-track"
@@ -80,8 +74,9 @@ homebrew_cask_packages=(
 # logi options
 
 # apps in mac store
+# fantastical
+
 # spark
-# amphetamine
 # todoist
 # tweetbot
 
@@ -92,23 +87,27 @@ done
 # configure git
 git config --global user.name "Matias Vad"
 git config --global user.email "matias@hey.com"
-gh config set git_protocol "ssh"
 
 # Install Composer
 echo "Installing Composer"
 curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 
-# Create projects directory called batcave
-echo "Creating a Batcave directory"
-mkdir -p $HOME/documents/batcave
-
 # Generate SSH key
 echo "Generating SSH keys"
-ssh-keygen -t rsa
+ssh-keygen -t ed25519
+
+touch ~/.ssh/config
+
+open ~/.ssh/config
+
+# Host *
+#  AddKeysToAgent yes
+#  # UseKeychain yes Only add if passphrase is used
+#  IdentityFile ~/.ssh/id_ed25519
 
 echo "Copied SSH key to clipboard - You can now add it to Github"
-pbcopy < ~/.ssh/id_rsa.pub
+pbcopy < ~/.ssh/id_ed25519.pub
 
 # zsh and oh-my-zsh
 echo "Adding ZSH"
@@ -120,28 +119,6 @@ touch ~/.my-zshrc
 
 # PATH stuff
 echo "export PATH=$HOME/.composer/vendor/bin:$PATH" >> ~/.my-zshrc
-
-# aliases
-echo "alias list='ls --group-directories-first'" >> ~/.my-zshrc
-echo "alias push='git push'" >> ~/.my-zshrc
-echo "alias pull='git pull'" >> ~/.my-zshrc
-echo "alias add='git add -A'" >> ~/.my-zshrc
-echo "alias commit='git commit -m'" >> ~/.my-zshrc
-echo "alias status='git status'" >> ~/.my-zshrc
-echo "alias checkout='git checkout'" >> ~/.my-zshrc
-echo "alias merge='git merge'" >> ~/.my-zshrc
-echo "alias clean='git clean -f -d'" >> ~/.my-zshrc
-echo "alias reset='git reset --hard'" >> ~/.my-zshrc
-echo "alias nope='git reset --hard'" >> ~/.my-zshrc
-
-echo "alias y='yarn'" >> ~/.my-zshrc
-echo "alias ys='yarn start'" >> ~/.my-zshrc
-
-echo "alias ni='npm install'" >> ~/.my-zshrc
-echo "alias ns='npm start'" >> ~/.my-zshrc
-echo "alias nb='npm run build'" >> ~/.my-zshrc
-echo "alias nd='npm run dev'" >> ~/.my-zshrc
-echo "" >> ~/.my-zshrc
 
 # zsh plugins
 echo "plugins=(git zsh-completions zsh-z)" >> ~/.my-zshrc
