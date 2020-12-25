@@ -46,6 +46,7 @@ echo "Installing Homebrew cask packages"
 
 homebrew_cask_packages=(
   "1password"
+  "basecamp"
   "cleanshot"
   "discord"
   "docker"
