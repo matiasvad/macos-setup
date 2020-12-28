@@ -68,6 +68,7 @@ homebrew_cask_packages=(
   "toggl-track"
   "tower"
   "transmit"
+  "twist"
   "vanilla"
   "visual-studio-code"
   "vlc"
