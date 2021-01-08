@@ -57,7 +57,6 @@ homebrew_cask_packages=(
   "imageoptim"
   "istat-menus"
   "mamp"
-  "nocturnal"
   "numi"
   "pastebot"
   "postman"
