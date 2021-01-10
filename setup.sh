@@ -141,5 +141,9 @@ echo ". ~/.my-zshrc" >> "$HOME/.zshrc"
 # uncomment and change ICON_CONTENT_EXPANSION
 # set SHORTEN_STRATEGY to truncate_to_last (only shows 1 folder)
 
+# Show dock instantly on hover, when hidden - Apple Silicon version
+echo "Showing dock instantly"
+defaults write com.apple.dock autohide-delay -float 0 && defaults write com.apple.dock autohide-time-modifier -float 0.4 && killall Dock
+
 # Complete
 echo "Installation Complete"
