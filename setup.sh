@@ -56,7 +56,7 @@ homebrew_cask_packages=(
   "hyper"
   "imageoptim"
   "istat-menus"
-  "mamp"
+  "local"
   "numi"
   "pastebot"
   "postman"
@@ -67,7 +67,6 @@ homebrew_cask_packages=(
   "toggl-track"
   "tower"
   "transmit"
-  "twist"
   "vanilla"
   "visual-studio-code"
   "vlc"
@@ -84,7 +83,7 @@ homebrew_cask_packages=(
 # tweetbot
 
 for homebrew_cask_package in "${homebrew_cask_packages[@]}"; do
-  brew cask install "$homebrew_cask_package"
+  brew install --cask "$homebrew_cask_package"
 done
 
 # configure git
