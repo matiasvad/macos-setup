@@ -56,6 +56,7 @@ homebrew_cask_packages=(
   "imageoptim"
   "istat-menus"
   "local"
+  "monitorcontrol"
   "numi"
   "pastebot"
   "postman"
