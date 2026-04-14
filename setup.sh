@@ -25,7 +25,7 @@ echo "Installing Homebrew packages"
 
 homebrew_packages=(
   "git"
-  "gulp"
+  "gulp-cli"
   "php"
   "node"
   "pnpm"
