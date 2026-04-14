@@ -46,7 +46,7 @@ echo "Installing Homebrew cask packages"
 homebrew_cask_packages=(
   "asana"
   "bambu-studio"
-  "chrome"
+  "google-chrome"
   "claude"
   "cleanshot"
   "discord"
