@@ -65,7 +65,6 @@ homebrew_cask_packages=(
   "rectangle"
   "spark"
   "the-unarchiver"
-  "toggl-track"
   "transmit"
   "visual-studio-code"
   "vlc"
