@@ -86,11 +86,6 @@ done
 git config --global user.name "Matias Vad"
 git config --global user.email "matias@hey.com"
 
-# Install Composer
-echo "Installing Composer"
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-
 # Generate SSH key
 echo "Generating SSH keys"
 ssh-keygen -t ed25519
