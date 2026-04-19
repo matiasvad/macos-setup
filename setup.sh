@@ -45,13 +45,14 @@ echo "Installing Homebrew cask packages"
 homebrew_cask_packages=(
   "asana"
   "bambu-studio"
-  "google-chrome"
   "claude"
   "cleanshot"
   "discord"
   "docker"
   "fantastical"
   "figma"
+  "google-chrome"
+  "google-drive"
   "hey"
   "hyper"
   "imageoptim"
@@ -67,7 +68,7 @@ homebrew_cask_packages=(
   "transmit"
   "visual-studio-code"
   "vlc"
-)  
+)
 
 # extra apps to install
 # logi options
