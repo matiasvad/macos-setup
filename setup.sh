@@ -64,6 +64,7 @@ homebrew_cask_packages=(
   "postman"
   "rectangle"
   "spark"
+  "synology-drive"
   "the-unarchiver"
   "transmit"
   "visual-studio-code"
