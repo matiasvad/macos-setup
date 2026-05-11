@@ -49,7 +49,7 @@ homebrew_cask_packages=(
   "cleanshot"
   "discord"
   "docker"
-  "fantastical"
+  # "fantastical" use Mac App Store to ensure correct license
   "figma"
   "google-chrome"
   "google-drive"
