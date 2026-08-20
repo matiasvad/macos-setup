@@ -64,7 +64,6 @@ homebrew_cask_packages=(
   "postman"
   "raycast"
   "readdle-spark"
-  "rectangle"
   "slack"
   "synology-drive"
   "the-unarchiver"
